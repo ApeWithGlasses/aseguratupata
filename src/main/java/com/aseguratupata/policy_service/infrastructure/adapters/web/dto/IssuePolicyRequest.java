@@ -4,17 +4,17 @@ import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
 
 public record IssuePolicyRequest(
-        @NotBlank(message = "El ID de la cotización es obligatorio")
+        @NotBlank(message = "El ID de la cotizaciÃ³n es obligatorio")
         String quoteId,
 
-        @NotBlank(message = "El nombre del dueño es obligatorio")
+        @NotBlank(message = "El nombre del dueÃ±o es obligatorio")
         String ownerName,
 
-        @NotBlank(message = "El documento del dueño es obligatorio")
+        @NotBlank(message = "El documento del dueÃ±o es obligatorio")
         String ownerId,
 
         @NotBlank(message = "El email es obligatorio")
-        @Email(message = "El formato del email no es válido")
+        @Email(message = "El formato del email no es vÃ¡lido")
         String ownerEmail
 ) {
 }
